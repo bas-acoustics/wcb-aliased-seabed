@@ -1,0 +1,117 @@
+#=========================================================================================
+# WATER COLUMN ACTIVE ACOUSTIC METADATA
+#
+# Metadata information must comply with:
+#     ICES. 2016. A metadata convention for processed acoustic data from active acoustic
+#     systems, SISP 4 TG-AcMeta Version 1.10, ICES WGFAST Topic Group, TG-AcMeta. 47 pp.
+#
+# Adapted for:
+#     TOML syntax language, Version 0.5.0.
+#     The Dublin Core Metadata standard, ISO 15836-1:2017, RFC5013
+#=========================================================================================
+
+[[metadata]]
+creator               = "Sophie Fielding"   
+creator_email         = "sof@bas.ac.uk"     
+date                  = 2019-04-11T17:40:23Z
+format                = "application/toml"  
+language              = "en"                
+publisher             = "British Antarctic Survey"
+rights                = "Copyright British Antarctic Survey 2018 - Licensed under the MIT license"
+title                 = "Calibration and post-processing metadata for RRS James Clark Ross (2014-12-01)"
+type                  = "text"              
+xmlns                 = "http://purl.org/dc/elements/1.1/"
+
+[ship]
+name                  = "RSS James Clark Ross"
+type                  = "Ship, research"    
+operator              = "British Antarctic Survey"
+
+[cruise]
+cruise_name           = "JR304"             
+area_description      = "Scotia Sea"        
+start_date            = 2014-11-17T17:14:00Z# ISO 8601 format     
+end_date              = 2014-12-17T10:26:00Z# ISO 8601 format     
+cruise_cummary_report = "https://www.bodc.ac.uk/data/information_and_inventories/cruise_inventory/report/jr304.pdf"
+
+[calibration]
+file                  = "ZDPL-D20141202-cal.toml"# (new, not in ICES!) 
+comments              = ""                  
+
+[data_acquisition]
+software_name         = "ER60"              
+software_version      = "2.0"               
+stored_data_format    = "SIMRAD RAW"        
+ping_duty_cycle       = "Variable"          
+
+[[instrument.transducer]]
+frequency             = 38                  # kHz                 
+location              = "Hull, keel"        
+manufacturer          = "Simrad"            
+model                 = "ES38"              
+beam_type             = "Single-beam, split-aperture"
+serial                = "23080"             
+depth                 = 6                   # m                   
+orientation           = "downwards-looking" 
+range_reference       = "transducer"        
+
+[[instrument.transceiver]]
+frequency             = 38                  # kHz (new, not in ICES!)
+manufacturer          = "Simrad"            
+model                 = "EK60"              
+serial                = "009072033fa5"      
+firmware              = "070413"            
+
+[[instrument.transducer]]
+frequency             = 70                  # kHz                 
+location              = "Hull, keel"        
+manufacturer          = "Simrad"            
+model                 = "ES70-7C"           
+beam_type             = "Single-beam, split-aperture"
+serial                = "280"               
+depth                 = 6                   # m                   
+orientation           = "downwards-looking" 
+range_reference       = "transducer"        
+
+[[instrument.transceiver]]
+frequency             = 70                  # kHz (new, not in ICES!)
+manufacturer          = "Simrad"            
+model                 = "EK60"              
+serial                = "0090720770eb"      
+firmware              = "070413"            
+
+[[instrument.transducer]]
+frequency             = 120                 # kHz                 
+location              = "Hull, keel"        
+manufacturer          = "Simrad"            
+model                 = "ES120-7"           
+beam_type             = "Single-beam, split-aperture"
+serial                = "29471"             
+depth                 = 6                   # m                   
+orientation           = "downwards-looking" 
+range_reference       = "transducer"        
+
+[[instrument.transceiver]]
+frequency             = 120                 # kHz (new, not in ICES!)
+manufacturer          = "Simrad"            
+model                 = "EK60"              
+serial                = "00907203422d"      
+firmware              = "070413"            
+
+[[instrument.transducer]]
+frequency             = 200                 # kHz                 
+location              = "Hull, keel"        
+manufacturer          = "Simrad"            
+model                 = "ES200-7"           
+beam_type             = "Single-beam, split-aperture"
+serial                = "240"               
+depth                 = 6                   # m                   
+orientation           = "downwards-looking" 
+range_reference       = "transducer"        
+
+[[instrument.transceiver]]
+frequency             = 200                 # kHz (new, not in ICES!)
+manufacturer          = "Simrad"            
+model                 = "EK60"              
+serial                = "009072033f91"      
+firmware              = "070413"            

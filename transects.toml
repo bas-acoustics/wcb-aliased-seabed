@@ -1,0 +1,41 @@
+#====================================================================
+# This file defines the start and end times for our attenuated signal
+# acoustic data example and references to related metadata and
+# calibration files.
+#
+# This data is released by British Antarctic Survey for demonstration
+# and test purposes only.
+# ===================================================================
+
+[[transect]]
+name = "Western Core Box aliased seabed"
+starttime = 2014-12-10T16:00:00Z
+endtime = 2014-12-10T18:00:00Z
+metadata_file = "https://github.com/bas-acoustics/wcb-aliased-seabed/blob/master/JR304-metadata.toml"
+calibration_file = "https://github.com/bas-acoustics/wcb-aliased-seabed/blob/master/ZDLP-D20141202-cal.toml"
+keywords = ["aliased seabed"]
+temperature = 1.06 # transect-specific temperature (Degrees C)
+salinity = 33.79 # transect-specifi salinity (PSU)
+soundspeed = 1456 # transect-specific sound speed value (m s-1)
+area = ["Scotia Sea", "Southern Atlantic"] # list of geographical areas along the transect
+frequencies = [38, 120, 200]
+env = [] # list of environmental files
+raws = [
+     "ftp://ftp.bas.ac.uk/rapidkrill/jr304/JR304_-D20141210-T155535.raw",
+     "ftp://ftp.bas.ac.uk/rapidkrill/jr304/JR304_-D20141210-T160255.raw",
+     "ftp://ftp.bas.ac.uk/rapidkrill/jr304/JR304_-D20141210-T161015.raw",
+     "ftp://ftp.bas.ac.uk/rapidkrill/jr304/JR304_-D20141210-T161735.raw",
+     "ftp://ftp.bas.ac.uk/rapidkrill/jr304/JR304_-D20141210-T162455.raw",
+     "ftp://ftp.bas.ac.uk/rapidkrill/jr304/JR304_-D20141210-T163215.raw",
+     "ftp://ftp.bas.ac.uk/rapidkrill/jr304/JR304_-D20141210-T163935.raw",
+     "ftp://ftp.bas.ac.uk/rapidkrill/jr304/JR304_-D20141210-T164655.raw",
+     "ftp://ftp.bas.ac.uk/rapidkrill/jr304/JR304_-D20141210-T165415.raw",
+     "ftp://ftp.bas.ac.uk/rapidkrill/jr304/JR304_-D20141210-T170135.raw",
+     "ftp://ftp.bas.ac.uk/rapidkrill/jr304/JR304_-D20141210-T170855.raw",
+     "ftp://ftp.bas.ac.uk/rapidkrill/jr304/JR304_-D20141210-T171615.raw",
+     "ftp://ftp.bas.ac.uk/rapidkrill/jr304/JR304_-D20141210-T172335.raw",
+     "ftp://ftp.bas.ac.uk/rapidkrill/jr304/JR304_-D20141210-T173055.raw",
+     "ftp://ftp.bas.ac.uk/rapidkrill/jr304/JR304_-D20141210-T173815.raw",
+     "ftp://ftp.bas.ac.uk/rapidkrill/jr304/JR304_-D20141210-T174535.raw",
+     "ftp://ftp.bas.ac.uk/rapidkrill/jr304/JR304_-D20141210-T175255.raw"  
+]

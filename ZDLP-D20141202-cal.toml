@@ -1,0 +1,187 @@
+#=========================================================================================
+# CALIBRATION DATA AND METADATA
+#
+# Metadata information must comply with:
+#     ICES. 2016. A metadata convention for processed acoustic data from active acoustic
+#     systems, SISP 4 TG-AcMeta Version 1.10, ICES WGFAST Topic Group, TG-AcMeta. 47 pp.
+#
+# Adapted for:
+#     TOML syntax language, Version 0.5.0.
+#     The Dublin Core Metadata standard, ISO 15836-1:2017, RFC5013
+#=========================================================================================
+
+[[metadata]]
+creator                 = "Sophie Fielding"     
+creator_email           = "sof@bas.ac.uk"       
+date                    = 2019-04-11T17:38:34Z  
+format                  = "application/toml"    
+language                = "en"                  
+publisher               = "British Antarctic Survey"
+rights                  = "Copyright British Antarctic Survey 2018 - Licensed under the MIT license"
+title                   = "Calibration and post-processing metadata for RRS James Clark Ross (2014-12-01)"
+type                    = "text"                
+xmlns                   = "http://purl.org/dc/elements/1.1/"
+
+[ship]
+name                    = "RSS James Clark Ross"
+type                    = "Ship, research"      
+operator                = "British Antarctic Survey"
+
+[cruise]
+cruise_name             = "JR304"               
+
+[calibration]
+date                    = "2014-12-02"          # ISO 8601 format       
+latitude                = -36.6871              # decimal degrees (new, not in ICES!)
+longitude               = -54.1589              # decimal degrees (new, not in ICES!)
+acquisition_method      = "standard sphere, in-situ"
+processing_method       = "Simrad lobes"        
+accuracy_estimate       = ""                    
+report                  = "https://www.bodc.ac.uk/data/information_and_inventories/cruise_inventory/report/jr304.pdf"
+comments                = ""                    
+
+[data_acquisition]
+software_name           = "ER60"                
+software_version        = "2.0"                 
+stored_data_format      = "SIMRAD RAW"          
+ping_duty_cycle         = "Variable"            
+
+[[instrument.transducer]]
+frequency               = 38                    # kHz                   
+location                = "Hull, keel"          
+manufacturer            = "Simrad"              
+model                   = "ES38"                
+beam_type               = "Single-beam, split-aperture"
+serial                  = "23080"               
+depth                   = 6                     # m                     
+orientation             = "downwards-looking"   
+range_reference         = "transducer"          
+psi                     = -20.7                 # dB                    
+beam_angle_major        = 6.99                  # deg                   
+beam_angle_minor        = 7.04                  # deg                   
+beam_angle_major_offset = -0.06                 # deg                   
+beam_angle_minor_offset = -0.08                 # deg                   
+
+[[instrument.transceiver]]
+frequency               = 38                    # kHz (new, not in ICES!)
+manufacturer            = "Simrad"              
+model                   = "EK60"                
+serial                  = "009072033fa5"        
+firmware                = "070413"              
+
+[[data_processing]]
+frequency               = 38                    # kHz                   
+transceiver_power       = 2000                  # watts                 
+transmit_pulse_length   = 1.024                 # ms                    
+on_axis_gain            = 25.65                 # dB                    
+Sacorrection            = -0.54                 # dB                    
+psi                     = -20.7                 # dB                    
+beam_angle_major        = 6.95                  # deg  (new, not in ICES!)
+beam_angle_minor        = 7.04                  # deg  (new, not in ICES!)
+beam_angle_major_offset = -0.07                 # deg  (new, not in ICES!)
+beam_angle_minor_offset = -0.11                 # deg  (new, not in ICES!)
+
+[[instrument.transducer]]
+frequency               = 70                    # kHz                   
+location                = "Hull, keel"          
+manufacturer            = "Simrad"              
+model                   = "ES70-7C"             
+beam_type               = "Single-beam, split-aperture"
+serial                  = "280"                 
+depth                   = 6                     # m                     
+orientation             = "downwards-looking"   
+range_reference         = "transducer"          
+psi                     = -20.6                 # dB                    
+beam_angle_major        = 6.87                  # deg                   
+beam_angle_minor        = 6.88                  # deg                   
+beam_angle_major_offset = 0                     # deg                   
+beam_angle_minor_offset = -0.03                 # deg                   
+
+[[instrument.transceiver]]
+frequency               = 70                    # kHz (new, not in ICES!)
+manufacturer            = "Simrad"              
+model                   = "EK60"                
+serial                  = "0090720770eb"        
+firmware                = "070413"              
+
+[[data_processing]]
+frequency               = 70                    # kHz                   
+transceiver_power       = 750                   # watts                 
+transmit_pulse_length   = 1.024                 # ms                    
+on_axis_gain            = 26.25                 # dB                    
+Sacorrection            = -0.38                 # dB                    
+psi                     = -20.6                 # dB                    
+beam_angle_major        = 6.53                  # deg  (new, not in ICES!)
+beam_angle_minor        = 6.49                  # deg  (new, not in ICES!)
+beam_angle_offset_major = 0.05                  # deg  (new, not in ICES!)
+beam_angle_offset_minor = -0.07                 # deg  (new, not in ICES!)
+
+[[instrument.transducer]]
+frequency               = 120                   # kHz                   
+location                = "Hull, keel"          
+manufacturer            = "Simrad"              
+model                   = "ES120-7"             
+beam_type               = "Single-beam, split-aperture"
+serial                  = "29471"               
+depth                   = 6                     # m                     
+orientation             = "downwards-looking"   
+range_reference         = "transducer"          
+psi                     = -20.7                 # dB                    
+beam_angle_major        = 7.14                  # deg                   
+beam_angle_minor        = 7.24                  # deg                   
+beam_angle_major_offset = 0.05                  # deg                   
+beam_angle_minor_offset = -0.13                 # deg                   
+
+[[instrument.transceiver]]
+frequency               = 120                   # kHz (new, not in ICES!)
+manufacturer            = "Simrad"              
+model                   = "EK60"                
+serial                  = "00907203422d"        
+firmware                = "070413"              
+
+[[data_processing]]
+frequency               = 120                   # kHz                   
+transceiver_power       = 500                   # watts                 
+transmit_pulse_length   = 1.024                 # ms                    
+on_axis_gain            = 23.29                 # dB                    
+Sacorrection            = -0.45                 # dB                    
+psi                     = -20.7                 # dB                    
+beam_angle_major        = 7.20                  # deg  (new, not in ICES!)
+beam_angle_minor        = 7.32                  # deg  (new, not in ICES!)
+beam_angle_offset_major = 0.05                  # deg  (new, not in ICES!)
+beam_angle_offset_minor = -0.12                 # deg  (new, not in ICES!)
+
+[[instrument.transducer]]
+frequency               = 200                   # kHz                   
+location                = "Hull, keel"          
+manufacturer            = "Simrad"              
+model                   = "ES200-7"             
+beam_type               = "Single-beam, split-aperture"
+serial                  = "240"                 
+depth                   = 6                     # m                     
+orientation             = "downwards-looking"   
+range_reference         = "transducer"          
+psi                     = -19.6                 # dB                    
+beam_angle_major        = 6.74                  # deg                   
+beam_angle_minor        = 6.58                  # deg                   
+beam_angle_major_offset = 0.26                  # deg                   
+beam_angle_minor_offset = 0.14                  # deg                   
+
+[[instrument.transceiver]]
+frequency               = 200                   # kHz (new, not in ICES!)
+manufacturer            = "Simrad"              
+model                   = "EK60"                
+serial                  = "009072033f91"        
+firmware                = "070413"              
+
+[[data_processing]]
+frequency               = 200                   # kHz                   
+transceiver_power       = 300                   # watts                 
+transmit_pulse_length   = 1.024                 # ms                    
+on_axis_gain            = 20.64                 # dB                    
+Sacorrection            = -0.29                 # dB                    
+psi                     = -19.6                 # dB                    
+beam_angle_major        = 6.59                  # deg  (new, not in ICES!)
+beam_angle_minor        = 6.52                  # deg  (new, not in ICES!)
+beam_angle_offset_major = 0.26                  # deg  (new, not in ICES!)
+beam_angle_offset_minor = 0.16                  # deg  (new, not in ICES!)
