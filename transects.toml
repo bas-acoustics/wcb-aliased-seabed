@@ -11,8 +11,8 @@
 name = "Western Core Box aliased seabed"
 starttime = 2014-12-10T16:00:00Z
 endtime = 2014-12-10T18:00:00Z
-metadata_file = "https://github.com/bas-acoustics/wcb-aliased-seabed/blob/master/JR304-metadata.toml"
-calibration_file = "https://github.com/bas-acoustics/wcb-aliased-seabed/blob/master/ZDLP-D20141202-cal.toml"
+metadata_file = "https://raw.githubusercontent.com/bas-acoustics/wcb-aliased-seabed/master/JR304-metadata.toml"
+calibration_file = "https://raw.githubusercontent.com/bas-acoustics/wcb-aliased-seabed/master/ZDLP-D20141202-cal.toml"
 keywords = ["aliased seabed"]
 temperature = 1.06 # transect-specific temperature (Degrees C)
 salinity = 33.79 # transect-specifi salinity (PSU)
